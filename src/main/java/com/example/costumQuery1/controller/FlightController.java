@@ -49,6 +49,14 @@ public class FlightController {
         return ResponseEntity.ok("created 50 flights");
     }
 
+    @GetMapping("/get-flights")
+    public ResponseEntity getAllFlight(){
+        return ResponseEntity.ok(flightRepository.findAll());
+    }
+
+
+
+
 
 
 
